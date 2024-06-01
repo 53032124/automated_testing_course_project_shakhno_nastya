@@ -1,7 +1,7 @@
 package pages;
 
 import utils.LogDriverActions;
-import utils.DriverStart;
+import utils.DriverChromeStart;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 
 import java.util.List;
 
-public class TodoPage extends DriverStart {
+public class TodoPage extends DriverChromeStart {
 
     public String toDoURL = "https://lambdatest.github.io/sample-todo-app/";
 
@@ -31,8 +31,8 @@ public class TodoPage extends DriverStart {
     public WebElement submitButton;
 
     public TodoPage(WebDriver driver) {
-        DriverStart.driver = new EventFiringDecorator(new LogDriverActions()).decorate(driver);
-        PageFactory.initElements(DriverStart.driver, this);
+ //       DriverChromeStart.driver = new EventFiringDecorator(new LogDriverActions()).decorate(driver);
+        PageFactory.initElements(DriverChromeStart.driver, this);
     }
 
     public void checkBoxClick(int index) {

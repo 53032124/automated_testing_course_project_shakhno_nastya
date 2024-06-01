@@ -6,9 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import utils.DriverStart;
 
-public class LogDriverActions extends DriverStart implements WebDriverListener {
+public class LogDriverActions extends DriverChromeStart implements WebDriverListener {
 
     private static Logger _loger = (Logger) LoggerFactory.getLogger(WebDriver.class);
 

@@ -17,7 +17,7 @@ import java.time.Duration;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
-abstract public class DriverStart  {
+abstract public class DriverChromeStart {
 
     public static WebDriver driver;
     private static ChromeOptions chromeOptions;
@@ -29,7 +29,7 @@ abstract public class DriverStart  {
         WebDriverManager.chromedriver().setup();
         chromeOptions = new ChromeOptions();
         WebDriver chromeDriver = new ChromeDriver(chromeOptions);
-        driver = new EventFiringDecorator(new LogDriverActions()).decorate(chromeDriver);
+//        driver = new EventFiringDecorator(new LogDriverActions()).decorate(chromeDriver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(25));
         driver.manage().window().maximize();
     }

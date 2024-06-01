@@ -2,7 +2,7 @@ package tests;
 
 import pages.TodoPage;
 
-import utils.DriverStart;
+import utils.DriverChromeStart;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Step;
@@ -10,13 +10,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import utils.TestListener;
+import utils.ListenerForTests;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-@Feature("Тесты 1")
-@ExtendWith(TestListener.class)
-public class TodoTests extends DriverStart {
+@Feature("Тест 1")
+@ExtendWith(ListenerForTests.class)
+public class TodoTests extends DriverChromeStart {
 
     TodoPage todoPage;
 
@@ -125,5 +125,4 @@ public class TodoTests extends DriverStart {
         logStep("Новый элемент успешно отмечен \n");
     }
 
-    //allure serve target/allure-results
 }
