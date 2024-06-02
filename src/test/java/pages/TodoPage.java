@@ -1,13 +1,11 @@
 package pages;
 
-import utils.LogDriverActions;
 import utils.DriverChromeStart;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.events.EventFiringDecorator;
 
 import java.util.List;
 

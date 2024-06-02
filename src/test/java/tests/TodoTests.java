@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import utils.ListenerForTests;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @Feature("Тест 1")
 @ExtendWith(ListenerForTests.class)

@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c6e9b4-e6b4-44ed-84bc-5f7ef2619c6a" name="Changes" comment="schedule page add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/SchedulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SchedulePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TodoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TodoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TodoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LogDriverActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LogDriverActions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +181,7 @@
       <workItem from="1717227641024" duration="328000" />
       <workItem from="1717227987548" duration="4039000" />
       <workItem from="1717238820576" duration="357000" />
-      <workItem from="1717239262198" duration="16294000" />
+      <workItem from="1717239262198" duration="17998000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <option name="closed" value="true" />
@@ -197,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717266933040</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="schedule page add">
+      <option name="closed" value="true" />
+      <created>1717338325663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717338325663</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,12 +234,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pages/TodoPage.java</url>
-          <line>33</line>
+          <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java</url>
-          <line>107</line>
+          <line>106</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

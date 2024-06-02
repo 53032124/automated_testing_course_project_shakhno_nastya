@@ -39,7 +39,6 @@ public class ScheduleTests extends DriverChromeStart {
         openScheduleSearch();
         searchForGroup();
         openGroupScheduleverifyCurrentDayHighlighted();
-//        verifyCurrentDayHighlighted();
     }
 
     @Step("Шаг 1. Проверить заголовок страницы, что подтверждает загружку страницы")
@@ -78,7 +77,6 @@ public class ScheduleTests extends DriverChromeStart {
         tabs.remove(currentWindow);
         driver.switchTo().window(tabs.get(0));
 
-        // Успешное открытие страницы поиска расписания и пролистывание вниз
         logStep("Успешное открытие страницы поиска расписания и пролистывание вниз \n");
     }
 
@@ -105,6 +103,7 @@ public class ScheduleTests extends DriverChromeStart {
         logStep("Шаг 5: Открыть расписание группы");
         schedulePage.scrollPageDown();
         schedulePage.clickFirstSearchResult();
+        // добить эту часть проекта
 //        logStep("Шаг 5.1: Проверить, что текущий день выделен");
 //        Assertions.assertTrue(schedulePage.isCurrentDayHighlighted(), "Текущий день не выделен");
 //        logStep("Текущий день успешно выделен");

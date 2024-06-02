@@ -1,6 +1,5 @@
 package utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
 import io.qameta.allure.Allure;
@@ -36,4 +35,6 @@ public class ListenerForTests implements TestWatcher {
         }
        // WebDriverManager.chromedriver().quit();
     }
+    // добавить сохранение падения теста скрином
+
 }

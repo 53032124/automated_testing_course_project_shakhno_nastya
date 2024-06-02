@@ -16,5 +16,4 @@ public class LogDriverActions extends DriverChromeStart implements WebDriverList
         Allure.step("Клик на " + element.getText());
     }
 
-    // add method to sout info when we put informations into field
 }
