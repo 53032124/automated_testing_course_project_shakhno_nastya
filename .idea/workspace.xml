@@ -4,19 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7c6e9b4-e6b4-44ed-84bc-5f7ef2619c6a" name="Changes" comment="first test">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="d7c6e9b4-e6b4-44ed-84bc-5f7ef2619c6a" name="Changes" comment="schedule page add">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TodoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TodoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TodoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LogDriverActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LogDriverActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SchedulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SchedulePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +39,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ScheduleTests.executor": "Run",
+    "JUnit.ScheduleTests.scheduleTest.executor": "Run",
+    "JUnit.ScheduleTests.testSchedulePage.executor": "Run",
     "JUnit.Tests.executor": "Run",
     "JUnit.Tests.toDoTest.executor": "Run",
     "JUnit.TodoTests.executor": "Run",
@@ -41,6 +49,7 @@
     "Maven.UnitTesting [clean].executor": "Run",
     "Maven.UnitTesting [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.UnitTesting [verify].executor": "Run",
+    "Maven.automated_testing_course_project_shakhno_nastya [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -64,33 +73,49 @@
       <recent name="C:\Users\nasty\IdeaProjects\UnitTesting\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TodoTests.toDoTest">
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ScheduleTests.scheduleTest">
+    <configuration name="ScheduleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="toDoTests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="toDoTests" />
-      <option name="MAIN_CLASS_NAME" value="toDoTests.Tests" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ScheduleTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.toDoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScheduleTests.scheduleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="toDoTests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="toDoTests" />
-      <option name="MAIN_CLASS_NAME" value="toDoTests.Tests" />
-      <option name="METHOD_NAME" value="toDoTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ScheduleTests" />
+      <option name="METHOD_NAME" value="scheduleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScheduleTests.testSchedulePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ScheduleTests" />
+      <option name="METHOD_NAME" value="testSchedulePage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,8 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TodoTests.toDoTest" />
+        <item itemvalue="JUnit.ScheduleTests.scheduleTest" />
+        <item itemvalue="JUnit.ScheduleTests" />
+        <item itemvalue="JUnit.ScheduleTests.testSchedulePage" />
         <item itemvalue="JUnit.TodoTests" />
+        <item itemvalue="JUnit.TodoTests.toDoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +179,7 @@
       <workItem from="1717227641024" duration="328000" />
       <workItem from="1717227987548" duration="4039000" />
       <workItem from="1717238820576" duration="357000" />
-      <workItem from="1717239262198" duration="2099000" />
+      <workItem from="1717239262198" duration="16294000" />
     </task>
     <task id="LOCAL-00001" summary="first test">
       <option name="closed" value="true" />
@@ -161,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717239124795</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="schedule page add">
+      <option name="closed" value="true" />
+      <created>1717266933040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717266933040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first test" />
-    <option name="LAST_COMMIT_MESSAGE" value="first test" />
+    <MESSAGE value="schedule page add" />
+    <option name="LAST_COMMIT_MESSAGE" value="schedule page add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -189,6 +226,20 @@
           <url>file://$PROJECT_DIR$/src/test/java/pages/TodoPage.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ScheduleTests.java</url>
+          <line>32</line>
+          <properties class="tests.ScheduleTests" method="scheduleTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
