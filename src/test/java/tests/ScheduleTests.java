@@ -34,6 +34,7 @@ public class ScheduleTests extends DriverChromeStart {
         schedulePage = new SchedulePage(driver);
 
         driver.get(schedulePage.mospolytechURL);
+
         goToMoscowPolytex();
         navigateToSchedulePage();
         openScheduleSearch();
@@ -41,7 +42,7 @@ public class ScheduleTests extends DriverChromeStart {
         openGroupScheduleverifyCurrentDayHighlighted();
     }
 
-    @Step("Шаг 1. Проверить заголовок страницы, что подтверждает загружку страницы")
+    @Step("Шаг 1. Проверить заголовок страницы, что подтверждает загрузку страницы")
     public void goToMoscowPolytex() {
         logStep("Шаг 1: Проверить заголовок страницы");
         String pageTitle = schedulePage.pageTitle.getText();
@@ -103,11 +104,12 @@ public class ScheduleTests extends DriverChromeStart {
         logStep("Шаг 5: Открыть расписание группы");
         schedulePage.scrollPageDown();
         schedulePage.clickFirstSearchResult();
-        // добить эту часть проекта
-//        logStep("Шаг 5.1: Проверить, что текущий день выделен");
-//        Assertions.assertTrue(schedulePage.isCurrentDayHighlighted(), "Текущий день не выделен");
-//        logStep("Текущий день успешно выделен");
+        logStep("Шаг 5.1: Проверить, что текущий день выделен");
+        schedulePage.scrollPageDown();
+        Assertions.assertTrue(schedulePage.isCurrentDayHighlighted(), "Текущий день не выделен");
+        logStep("Текущий день успешно выделен");
         logStep("Расписание группы открыто успешно \n");
     }
+
 
 }

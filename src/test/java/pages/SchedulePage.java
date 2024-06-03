@@ -10,7 +10,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.DayOfWeek;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.TextStyle;
+import java.util.Locale;
 
 public class SchedulePage extends DriverChromeStart {
 
@@ -61,14 +66,30 @@ public class SchedulePage extends DriverChromeStart {
 
 
     public String getCurrentDayOfWeek() {
-        return java.time.LocalDate.now().getDayOfWeek().name().toLowerCase();
+        DayOfWeek dow = LocalDate.now().getDayOfWeek();
+        Locale ru = new Locale("ru", "RU");
+        String str = dow.getDisplayName(TextStyle.FULL, ru);
+        return Character.toUpperCase(str.charAt(0)) + str.substring(1);
     }
+
 
     public boolean isCurrentDayHighlighted() {
         String currentDay = getCurrentDayOfWeek();
-        WebElement currentDayElement = driver.findElement(By.className(currentDay));
-        return currentDayElement.getAttribute("class").contains("highlighted");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement currentDayElement = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[contains(@class, 'schedule-day_today')]//div[@class='bold schedule-day__title' and contains(text(), '" + currentDay + "')]")
+        ));
+
+        // Проверка цвета фона элемента
+        String backgroundColor = currentDayElement.getCssValue("background-color");
+        String expectedColor = "rgba(170, 170, 170, 1)"; // #e2ffd9 в формате RGBA
+        System.out.println(backgroundColor);
+
+        return backgroundColor.equals(expectedColor);
     }
+
+
     public void scrollPageDown() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
