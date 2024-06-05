@@ -1,9 +1,11 @@
 package utils;
 
+import com.google.common.base.Predicate;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -43,5 +45,12 @@ abstract public class DriverChromeStart {
 
     public void waitElement(String path) {
         wait.until(visibilityOfElementLocated(By.xpath(path)));
+    }
+    public static void waitForPageLoad(WebDriver driver) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+
+        wait.until(webDriver ->
+                ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete")
+        );
     }
 }

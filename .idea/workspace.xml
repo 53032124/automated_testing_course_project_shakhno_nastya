@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Заработало">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" afterDir="false" />
+    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Наконец-то тест-кейс 1 для 4 задания урааа">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/YandexMarketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/YandexMarketPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,44 +33,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CitilinkTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CitilinkTests.testProductSortingByPrice.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ScheduleTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ScheduleTests.scheduleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TodoTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.YandexMarketTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.YandexMarketTests.searchProductTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.automated_testing_course_project_shakhno_nastya [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasty/IdeaProjects/automated_testing_course_project_shakhno_anastasia&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.CitilinkTests.executor": "Run",
+    "JUnit.CitilinkTests.tes1.executor": "Run",
+    "JUnit.CitilinkTests.testAddProductToCartWithFilter.executor": "Run",
+    "JUnit.CitilinkTests.testProductSortingByPrice.executor": "Run",
+    "JUnit.ScheduleTests.executor": "Run",
+    "JUnit.ScheduleTests.scheduleTest.executor": "Run",
+    "JUnit.TodoTests.executor": "Run",
+    "JUnit.YandexMarketTests.executor": "Run",
+    "JUnit.YandexMarketTests.searchProductTest.executor": "Run",
+    "Maven.automated_testing_course_project_shakhno_nastya [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nasty/IdeaProjects/automated_testing_course_project_shakhno_anastasia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CitilinkTests.testProductSortingByPrice">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="automated_testing_course_project_shakhno_nastya" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="JUnit.CitilinkTests.testAddProductToCartWithFilter">
     <configuration name="CitilinkTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
@@ -82,6 +71,38 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitilinkTests.tes1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="METHOD_NAME" value="tes1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitilinkTests.testAddProductToCartWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="METHOD_NAME" value="testAddProductToCartWithFilter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,29 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YandexMarketTests.searchProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automated_testing_course_project_shakhno_nastya" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.YandexMarketTests" />
-      <option name="METHOD_NAME" value="searchProductTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CitilinkTests.testProductSortingByPrice" />
+        <item itemvalue="JUnit.CitilinkTests.testAddProductToCartWithFilter" />
         <item itemvalue="JUnit.CitilinkTests" />
+        <item itemvalue="JUnit.CitilinkTests.testProductSortingByPrice" />
+        <item itemvalue="JUnit.CitilinkTests.tes1" />
         <item itemvalue="JUnit.YandexMarketTests" />
-        <item itemvalue="JUnit.YandexMarketTests.searchProductTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +161,8 @@
       <workItem from="1717452597075" duration="1992000" />
       <workItem from="1717490024286" duration="15322000" />
       <workItem from="1717584818762" duration="6340000" />
-      <workItem from="1717612363620" duration="6412000" />
+      <workItem from="1717612363620" duration="8138000" />
+      <workItem from="1717622986216" duration="4267000" />
     </task>
     <task id="LOCAL-00001" summary="add inform for schedule page">
       <option name="closed" value="true" />
@@ -198,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717509197187</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Наконец-то тест-кейс 1 для 4 задания урааа">
+      <option name="closed" value="true" />
+      <created>1717621268719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717621268719</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +234,7 @@
     <MESSAGE value="add YandexTest" />
     <MESSAGE value="слава богу заработало, добавить защиту от умных капч" />
     <MESSAGE value="Заработало" />
-    <option name="LAST_COMMIT_MESSAGE" value="Заработало" />
+    <MESSAGE value="Наконец-то тест-кейс 1 для 4 задания урааа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Наконец-то тест-кейс 1 для 4 задания урааа" />
   </component>
 </project>
