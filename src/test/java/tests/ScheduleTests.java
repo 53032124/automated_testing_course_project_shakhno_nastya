@@ -21,7 +21,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-@Feature("Тестирование расписания")
+@Feature("Задание 2")
 @ExtendWith(ListenerForTests.class)
 public class ScheduleTests extends DriverChromeStart {
 

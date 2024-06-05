@@ -12,14 +12,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import utils.ListenerForTests;
 
-@Feature("Тест 1")
+@Feature("Тест 3")
 @ExtendWith(ListenerForTests.class)
 public class YandexMarketTests extends DriverChromeStart {
 
     YandexMarketPage marketPage;
 
     @Owner("Nastya Shakhno")
-    @DisplayName(value="Проверка поиска товара на Яндекс.Маркете")
+    @DisplayName("Проверка поиска товара на Яндекс.Маркете")
     @Test
     public void searchProductTest() {
         marketPage = new YandexMarketPage(driver);

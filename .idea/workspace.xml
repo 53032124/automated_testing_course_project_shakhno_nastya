@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="add YandexTest">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Заработало">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/YandexPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/YandexTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/YandexMarketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/YandexMarketPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,29 +33,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.ScheduleTests.executor": "Run",
-    "JUnit.ScheduleTests.scheduleTest.executor": "Run",
-    "JUnit.TodoTests.executor": "Run",
-    "JUnit.YandexMarketTests.executor": "Run",
-    "JUnit.YandexMarketTests.searchProductTest.executor": "Run",
-    "Maven.automated_testing_course_project_shakhno_nastya [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nasty/IdeaProjects/automated_testing_course_project_shakhno_anastasia",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CitilinkTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CitilinkTests.testProductSortingByPrice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScheduleTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScheduleTests.scheduleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.YandexMarketTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.YandexMarketTests.searchProductTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.automated_testing_course_project_shakhno_nastya [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasty/IdeaProjects/automated_testing_course_project_shakhno_anastasia&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.YandexMarketTests.searchProductTest">
+}</component>
+  <component name="RunManager" selected="JUnit.CitilinkTests.testProductSortingByPrice">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="automated_testing_course_project_shakhno_nastya" />
@@ -70,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScheduleTests.scheduleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CitilinkTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
@@ -79,14 +80,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ScheduleTests" />
-      <option name="METHOD_NAME" value="scheduleTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TodoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CitilinkTests.testProductSortingByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +95,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TodoTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="METHOD_NAME" value="testProductSortingByPrice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.YandexMarketTests.searchProductTest" />
+        <item itemvalue="JUnit.CitilinkTests.testProductSortingByPrice" />
+        <item itemvalue="JUnit.CitilinkTests" />
         <item itemvalue="JUnit.YandexMarketTests" />
+        <item itemvalue="JUnit.YandexMarketTests.searchProductTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ScheduleTests.scheduleTest" />
-        <item itemvalue="JUnit.TodoTests" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +154,9 @@
       <workItem from="1717340641311" duration="2804000" />
       <workItem from="1717422620199" duration="4768000" />
       <workItem from="1717452597075" duration="1992000" />
-      <workItem from="1717490024286" duration="11825000" />
+      <workItem from="1717490024286" duration="15322000" />
+      <workItem from="1717584818762" duration="6340000" />
+      <workItem from="1717612363620" duration="6412000" />
     </task>
     <task id="LOCAL-00001" summary="add inform for schedule page">
       <option name="closed" value="true" />
@@ -171,7 +174,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717452684007</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="слава богу заработало, добавить защиту от умных капч">
+      <option name="closed" value="true" />
+      <created>1717509091005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717509091005</updated>
+    </task>
+    <task id="LOCAL-00004" summary="слава богу заработало, добавить защиту от умных капч">
+      <option name="closed" value="true" />
+      <created>1717509173931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717509173931</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Заработало">
+      <option name="closed" value="true" />
+      <created>1717509197187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717509197187</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,21 +218,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add inform for schedule page" />
     <MESSAGE value="add YandexTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add YandexTest" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/YandexMarketTests.java</url>
-          <line>23</line>
-          <properties class="tests.YandexMarketTests" method="searchProductTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="слава богу заработало, добавить защиту от умных капч" />
+    <MESSAGE value="Заработало" />
+    <option name="LAST_COMMIT_MESSAGE" value="Заработало" />
   </component>
 </project>

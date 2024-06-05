@@ -20,7 +20,7 @@ public class TodoTests extends DriverChromeStart {
     TodoPage todoPage;
 
     @Owner("Nastya Shakhno")
-    @DisplayName(value="Тестирование списка дел \"LambdaTest Sample App\"")
+    @DisplayName("Тестирование списка дел \"LambdaTest Sample App\"")
     @Test
     public void toDoTest() {
         todoPage = new TodoPage(driver);

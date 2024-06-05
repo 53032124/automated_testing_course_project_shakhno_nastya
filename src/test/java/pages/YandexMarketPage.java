@@ -51,23 +51,23 @@ public class YandexMarketPage extends DriverChromeStart {
     }
 
 
-        public void goToTablets() {
-            // Ожидание появления и кликабельности кнопки каталога
-            logStep("Переход в каталог товаров Яндекс Маркета");
-            waitElement("//span[contains(text(),'Каталог')]");
-            catalogButton.click();
+    public void goToTablets() {
+        // Ожидание появления и кликабельности кнопки каталога
+        logStep("Переход в каталог товаров Яндекс Маркета");
+        waitElement("//span[contains(text(),'Каталог')]");
+        catalogButton.click();
 
-            // Ожидание появления элемента электроники и перемещение к нему
-            logStep("Наведение курсора на раздел Электроника");
-            waitElement("//span[contains(text(),'Электроника') and @class ='_3W4t0']");
-            Actions actions = new Actions(driver);
-            actions.moveToElement(electronicsElement).perform();
-            // Ожидание кликабельности элемента планшетов и переход к нему
+        // Ожидание появления элемента электроники и перемещение к нему
+        logStep("Наведение курсора на раздел Электроника");
+        waitElement("//span[contains(text(),'Электроника') and @class ='_3W4t0']");
+        Actions actions = new Actions(driver);
+        actions.moveToElement(electronicsElement).perform();
+        // Ожидание кликабельности элемента планшетов и переход к нему
 
-            logStep("Переход в раздеел Планшеты");
-            waitElement("//a[contains(text(),'Планшеты') and @class='_2re3U ltlqD _2TBT0']");
-            tablets.click();
-        }
+        logStep("Переход в раздеел Планшеты");
+        waitElement("//a[contains(text(),'Планшеты') and @class='_2re3U ltlqD _2TBT0']");
+        tablets.click();
+    }
 
 
     public void filterBySamsung() {

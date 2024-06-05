@@ -29,7 +29,6 @@ public class TodoPage extends DriverChromeStart {
     public WebElement submitButton;
 
     public TodoPage(WebDriver driver) {
- //       DriverChromeStart.driver = new EventFiringDecorator(new LogDriverActions()).decorate(driver);
         PageFactory.initElements(DriverChromeStart.driver, this);
     }
 
