@@ -38,7 +38,7 @@ abstract public class DriverChromeStart {
         setUp();
     }
 
-    public void logStep(String message) {
+    public static void logStep(String message) {
         logger.info(message);
         Allure.step(message);
     }

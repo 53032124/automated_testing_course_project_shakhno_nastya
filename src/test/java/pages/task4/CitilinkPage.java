@@ -1,4 +1,4 @@
-package pages;
+package pages.task4;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.JavascriptExecutor;
@@ -39,22 +39,6 @@ public class CitilinkPage extends DriverChromeStart {
     @FindBy(xpath = "//span[contains(@class, 'e1j9birj0 e106ikdt0 app-catalog-56qww8 e1gjr6xo0')]")
     public List<WebElement> productPrices;
 
-    // Elements for Test Case 2
-    @FindBy(xpath = "//span[text()='Процессоры']")
-    private WebElement processorsCategory;
-
-    @FindBy(xpath = "//span[@class='app-catalog-xojxdf eig9qqj0']")
-    private WebElement fiveMinutePickupFilter;
-
-    @FindBy(xpath = "(//button[contains(@class, 'e4uhfkv0 app-catalog-19zipnm e4mggex0')])[1]")
-    private WebElement addToCartButton;
-
-    @FindBy(xpath = "//a[contains(@href, '/cart')]")
-    private WebElement cartButton;
-
-    @FindBy(xpath = "//div[@class='cart-items']")
-    private WebElement cartItems;
-
     public CitilinkPage(WebDriver driver) {
         PageFactory.initElements(DriverChromeStart.driver, this);
     }
@@ -68,10 +52,11 @@ public class CitilinkPage extends DriverChromeStart {
         waitElement("(//span[text()='Смартфоны и планшеты' and @class = 'e19upju70 e106ikdt0 css-1t3lgls e1gjr6xo0'])[2]");
         Actions actions = new Actions(driver);
         actions.moveToElement(smartphonesAndTabletsCategory).perform();
-        waitElement("//span[text()='APPLE iPhone']");
 
         logStep("Нажатие на APPLE iPhone");
         appleIphoneCategory.click();
+        waitElement("//h1[@class='elbnj820 eml1k9j0 app-catalog-kfo60a e1gjr6xo0']");
+
     }
 
     public void sortByPriceAsc() {
@@ -99,7 +84,7 @@ public class CitilinkPage extends DriverChromeStart {
         }
     }
 
-    private void updateProductLists() {
+    protected void updateProductLists() {
         waitForPageLoad(driver);
 
         // Добавление небольшой задержки
@@ -125,6 +110,7 @@ public class CitilinkPage extends DriverChromeStart {
         logStep("Количество цен после обновления: " + productPrices.size());
     }
 
+
     private void verifySortedProducts() {
         logStep("Проверка сортировки товаров по возрастанию цены");
         for (int i = 0; i < 4; i++) {
@@ -137,35 +123,9 @@ public class CitilinkPage extends DriverChromeStart {
         }
         logStep("Сортировка товаров успешно проверена");
     }
-
-    // Methods for Test Case 2
-    public void navigateToProcessors() {
-
-        processorsCategory.click();
-        waitForPageLoad(driver);
-    }
-
-    public void applyFiveMinutePickupFilter() {
-        fiveMinutePickupFilter.click();
-        waitForPageLoad(driver); // Ожидание загрузки после применения фильтра
-    }
-
-    public void addFirstProductToCart() {
-        updateProductLists();
-        productTitles.get(0).click(); // Открытие страницы первого товара
-        waitElement("(//button[contains(@class, 'e4uhfkv0 app-catalog-19zipnm e4mggex0')])[1]");
-        addToCartButton.click();
-        waitForPageLoad(driver); // Ожидание обновления страницы после добавления в корзину
-    }
-
-    public void verifyProductInCart() {
-        cartButton.click();
-        waitForPageLoad(driver);
-        Assertions.assertTrue(cartItems.isDisplayed(), "Товар не появился в корзине");
-    }
-
     public void scrollPageDown() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
     }
+
 }

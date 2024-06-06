@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Наконец-то тест-кейс 1 для 4 задания урааа">
+    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Добавление 2 тест кейса">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +25,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -36,6 +48,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.CitilinkTestCase1.testProductSortingByPrice.executor": "Run",
+    "JUnit.CitilinkTestCase2.executor": "Run",
+    "JUnit.CitilinkTestCase2.testAddProductToCartWithFilter.executor": "Run",
     "JUnit.CitilinkTests.executor": "Run",
     "JUnit.CitilinkTests.tes1.executor": "Run",
     "JUnit.CitilinkTests.testAddProductToCartWithFilter.executor": "Run",
@@ -48,7 +63,8 @@
     "Maven.automated_testing_course_project_shakhno_nastya [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master-for-four-test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/nasty/IdeaProjects/automated_testing_course_project_shakhno_anastasia",
     "node.js.detected.package.eslint": "true",
@@ -56,95 +72,98 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CitilinkTests.testAddProductToCartWithFilter">
-    <configuration name="CitilinkTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CitilinkTestCase2.testAddProductToCartWithFilter">
+    <configuration name="CitilinkTestCase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase1" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CitilinkTests.tes1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CitilinkTestCase1.testAddProductToCartWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
-      <option name="METHOD_NAME" value="tes1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CitilinkTests.testAddProductToCartWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automated_testing_course_project_shakhno_nastya" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase1" />
       <option name="METHOD_NAME" value="testAddProductToCartWithFilter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CitilinkTests.testProductSortingByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CitilinkTestCase1.testProductSortingByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CitilinkTests" />
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase1" />
       <option name="METHOD_NAME" value="testProductSortingByPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YandexMarketTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CitilinkTestCase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.YandexMarketTests" />
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase2" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitilinkTestCase2.testAddProductToCartWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase2" />
+      <option name="METHOD_NAME" value="testAddProductToCartWithFilter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CitilinkTests.testAddProductToCartWithFilter" />
-        <item itemvalue="JUnit.CitilinkTests" />
-        <item itemvalue="JUnit.CitilinkTests.testProductSortingByPrice" />
-        <item itemvalue="JUnit.CitilinkTests.tes1" />
-        <item itemvalue="JUnit.YandexMarketTests" />
+        <item itemvalue="JUnit.CitilinkTestCase2.testAddProductToCartWithFilter" />
+        <item itemvalue="JUnit.CitilinkTestCase1.testProductSortingByPrice" />
+        <item itemvalue="JUnit.CitilinkTestCase2" />
+        <item itemvalue="JUnit.CitilinkTestCase1" />
+        <item itemvalue="JUnit.CitilinkTestCase1.testAddProductToCartWithFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +181,7 @@
       <workItem from="1717490024286" duration="15322000" />
       <workItem from="1717584818762" duration="6340000" />
       <workItem from="1717612363620" duration="8138000" />
-      <workItem from="1717622986216" duration="4267000" />
+      <workItem from="1717622986216" duration="10552000" />
     </task>
     <task id="LOCAL-00001" summary="add inform for schedule page">
       <option name="closed" value="true" />
@@ -212,18 +231,53 @@
       <option name="project" value="LOCAL" />
       <updated>1717621268719</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавление 2 тест кейса">
+      <option name="closed" value="true" />
+      <created>1717627588972</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717627588972</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master-for-four-test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -235,6 +289,22 @@
     <MESSAGE value="слава богу заработало, добавить защиту от умных капч" />
     <MESSAGE value="Заработало" />
     <MESSAGE value="Наконец-то тест-кейс 1 для 4 задания урааа" />
-    <option name="LAST_COMMIT_MESSAGE" value="Наконец-то тест-кейс 1 для 4 задания урааа" />
+    <MESSAGE value="Добавление 2 тест кейса" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление 2 тест кейса" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase2.java</url>
+          <line>22</line>
+          <properties class="tests.task4.CitilinkTestCase2" method="testAddProductToCartWithFilter">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
