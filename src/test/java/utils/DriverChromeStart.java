@@ -1,6 +1,5 @@
 package utils;
 
-import com.google.common.base.Predicate;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.BeforeEach;

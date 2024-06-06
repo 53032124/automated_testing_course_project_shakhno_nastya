@@ -28,7 +28,7 @@ public class CitilinkTestCase2 extends DriverChromeStart {
         navigateToProcessors();
         applyFilterPickupIn5Minutes();
         addFirstProductToCart();
-        //goToCartAndVerifyProduct();
+        goToCartAndVerifyProduct();
     }
 
 

@@ -1,6 +1,6 @@
 package pages.task4;
 
-import org.junit.jupiter.api.Assertions;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -61,7 +61,7 @@ public class CitilinkPageForTestCase2 extends CitilinkPage {
     public void goToCartAndVerifyProduct() {
         logStep("Переход в корзину");
         goToCartButton.click();
-        waitForPageLoad(driver);
+        //waitForPageLoad(driver);
 
         //Assertions.assertTrue(cartProduct.isDisplayed(), "Товар не найден в корзине");
     }

@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Добавление 2 тест кейса">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase2.java" afterDir="false" />
+    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Добавление 2 тест кейса и основного функционала">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CitilinkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CitilinkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverChromeStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +178,7 @@
       <workItem from="1717490024286" duration="15322000" />
       <workItem from="1717584818762" duration="6340000" />
       <workItem from="1717612363620" duration="8138000" />
-      <workItem from="1717622986216" duration="10552000" />
+      <workItem from="1717622986216" duration="10950000" />
     </task>
     <task id="LOCAL-00001" summary="add inform for schedule page">
       <option name="closed" value="true" />
@@ -239,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717627588972</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавление 2 тест кейса и основного функционала">
+      <option name="closed" value="true" />
+      <created>1717633754182</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717633754182</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +276,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master-for-four-test" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -290,7 +295,8 @@
     <MESSAGE value="Заработало" />
     <MESSAGE value="Наконец-то тест-кейс 1 для 4 задания урааа" />
     <MESSAGE value="Добавление 2 тест кейса" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление 2 тест кейса" />
+    <MESSAGE value="Добавление 2 тест кейса и основного функционала" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление 2 тест кейса и основного функционала" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
