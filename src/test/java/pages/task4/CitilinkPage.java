@@ -21,6 +21,8 @@ public class CitilinkPage extends DriverChromeStart {
     @FindBy(xpath = "//h1")
     public WebElement pageTitle;
 
+    @FindBy(xpath = "//h1[@class='elbnj820 eml1k9j0 app-catalog-kfo60a e1gjr6xo0']")
+    public WebElement pageTitleApple;
     @FindBy(xpath = "//span[text()='Каталог товаров']")
     public WebElement catalogMenu;
 
@@ -56,6 +58,8 @@ public class CitilinkPage extends DriverChromeStart {
         logStep("Нажатие на APPLE iPhone");
         appleIphoneCategory.click();
         waitElement("//h1[@class='elbnj820 eml1k9j0 app-catalog-kfo60a e1gjr6xo0']");
+        String pageTitleText = pageTitleApple.getText();
+        Assertions.assertEquals("Apple iPhone", pageTitleText, "Заголовок страницы не соответствует ожидаемому");
 
     }
 
@@ -126,6 +130,11 @@ public class CitilinkPage extends DriverChromeStart {
     public void scrollPageDown() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
+    }
+
+    public static void scrollPageUp() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,0)");
     }
 
 }

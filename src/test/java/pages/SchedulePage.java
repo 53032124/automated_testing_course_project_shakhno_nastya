@@ -84,7 +84,6 @@ public class SchedulePage extends DriverChromeStart {
         // Проверка цвета фона элемента
         String backgroundColor = currentDayElement.getCssValue("background-color");
         String expectedColor = "rgba(170, 170, 170, 1)"; // #e2ffd9 в формате RGBA
-        System.out.println(backgroundColor);
 
         return backgroundColor.equals(expectedColor);
     }

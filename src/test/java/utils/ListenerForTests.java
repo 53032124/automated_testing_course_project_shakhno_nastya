@@ -1,5 +1,6 @@
 package utils;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
 import io.qameta.allure.Allure;
@@ -18,9 +19,9 @@ public class ListenerForTests implements TestWatcher {
             );
 
             Allure.addAttachment("Логи в результате падения теста: ", String.valueOf(DriverChromeStart.driver.manage().logs().get(LogType.BROWSER).getAll()));
-            //DriverChromeStart.driver.quit();
+            DriverChromeStart.driver.quit();
         }
-        //WebDriverManager.chromedriver().quit();
+        WebDriverManager.chromedriver().quit();
     }
 
     @Override
@@ -33,7 +34,7 @@ public class ListenerForTests implements TestWatcher {
             Allure.addAttachment("Логи в результате успешного прохождения теста: ", String.valueOf(DriverChromeStart.driver.manage().logs().get(LogType.BROWSER).getAll()));
             //DriverChromeStart.driver.quit();
         }
-       // WebDriverManager.chromedriver().quit();
+        WebDriverManager.chromedriver().quit();
     }
     // добавить сохранение падения теста скрином
 

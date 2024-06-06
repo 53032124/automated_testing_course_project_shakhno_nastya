@@ -1,5 +1,6 @@
 package tests.task4;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,7 +10,6 @@ import utils.DriverChromeStart;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
 
 @Feature("Задание 4")
 @ExtendWith(ListenerForTests.class)
@@ -27,20 +27,17 @@ public class CitilinkTestCase2 extends DriverChromeStart {
         CitilinkTestCase1.verifyHomePage();
         navigateToProcessors();
         applyFilterPickupIn5Minutes();
+
         addFirstProductToCart();
         goToCartAndVerifyProduct();
     }
-
-
 
     @Step("Шаг 2. Перейти на страницу 'Процессоры'")
     public void navigateToProcessors() {
         logStep("Шаг 2: Перейти на страницу 'Процессоры'");
         citilinkPage.selectProcessorsCategory();
-
-        String pageTitle = citilinkPage.pageTitle.getText();
-        Assertions.assertEquals("Процессоры", pageTitle);
-
+        String title = driver.getTitle();
+        Assertions.assertTrue(title.contains("Процессоры - купить процессор для компьютера цены и отзывы, продажа процессоров для ПК в СИТИЛИНК"));
         logStep("Страница с процессорами загружена \n");
     }
 
@@ -48,7 +45,6 @@ public class CitilinkTestCase2 extends DriverChromeStart {
     public void applyFilterPickupIn5Minutes() {
         logStep("Шаг 3: Выставить фильтр 'Забрать через 5 минут'");
         citilinkPage.applyPickupIn5MinutesFilter();
-
         logStep("Фильтр 'Забрать через 5 минут' применен \n");
     }
 
@@ -56,7 +52,6 @@ public class CitilinkTestCase2 extends DriverChromeStart {
     public void addFirstProductToCart() {
         logStep("Шаг 4: Первый в списке товар добавить в корзину");
         citilinkPage.addFirstProductToCart();
-
         logStep("Первый товар добавлен в корзину \n");
     }
 
@@ -64,7 +59,6 @@ public class CitilinkTestCase2 extends DriverChromeStart {
     public void goToCartAndVerifyProduct() {
         logStep("Шаг 5: Перейти в корзину и проверить наличие товара");
         citilinkPage.goToCartAndVerifyProduct();
-
         logStep("Проверка товара в корзине успешно завершена \n");
     }
 }

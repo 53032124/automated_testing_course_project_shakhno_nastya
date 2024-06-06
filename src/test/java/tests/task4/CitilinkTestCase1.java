@@ -68,15 +68,6 @@ public class CitilinkTestCase1 extends DriverChromeStart {
         logStep("Сортировка по цене успешно установлена \n");
     }
 
-    @DisplayName("Тест-кейс 2 (проверка сортировки товаров по цене)")
-    @Test
-    public void tes1() {
-        citilinkPage = new CitilinkPage(driver);
-        driver.get(citilinkPage.citilinkURL);
-
-        verifyHomePage();
-
-    }
 
 
 }
