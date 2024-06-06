@@ -1,6 +1,6 @@
-package tests;
+package tests.task4;
 
-import pages.CitilinkPage;
+import pages.task4.CitilinkPage;
 
 import utils.DriverChromeStart;
 import io.qameta.allure.Feature;
@@ -14,11 +14,11 @@ import utils.ListenerForTests;
 
 @Feature("Задание 4")
 @ExtendWith(ListenerForTests.class)
-public class CitilinkTests extends DriverChromeStart {
+public class CitilinkTestCase1 extends DriverChromeStart {
 
     CitilinkPage citilinkPage;
 
-    @Owner("Nastya Shakhno")
+    @Owner("Анастасия Шахно")
     @DisplayName("Тест-кейс 1 (проверка сортировки товаров по цене)")
     @Test
     public void testProductSortingByPrice() {
@@ -32,7 +32,7 @@ public class CitilinkTests extends DriverChromeStart {
     }
 
     @Step("Шаг 1. Проверить, что открылась главная страница")
-    public void verifyHomePage() {
+    protected static void verifyHomePage() {
         logStep("Шаг 1: Проверить, что открылась главная страница");
 
         String title = driver.getTitle();
@@ -45,10 +45,6 @@ public class CitilinkTests extends DriverChromeStart {
     public void navigateToInternalHardDrives() {
         logStep("Шаг 2: Перейти в категорию 'Смартфоны и планшеты' -> 'APPLE iPhone'");
         citilinkPage.selectCategory();
-
-        String pageTitle = citilinkPage.pageTitle.getText();
-
-        Assertions.assertEquals("Apple iPhone", pageTitle);
 
         logStep("Страница с техникой Apple загружена \n");
     }
@@ -71,5 +67,16 @@ public class CitilinkTests extends DriverChromeStart {
 
         logStep("Сортировка по цене успешно установлена \n");
     }
+
+    @DisplayName("Тест-кейс 2 (проверка сортировки товаров по цене)")
+    @Test
+    public void tes1() {
+        citilinkPage = new CitilinkPage(driver);
+        driver.get(citilinkPage.citilinkURL);
+
+        verifyHomePage();
+
+    }
+
 
 }

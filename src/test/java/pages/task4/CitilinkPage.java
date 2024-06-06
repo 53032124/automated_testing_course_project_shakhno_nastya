@@ -1,8 +1,9 @@
-package pages;
+package pages.task4;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.DriverChromeStart;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
 import java.util.List;
 
 public class CitilinkPage extends DriverChromeStart {
@@ -44,20 +46,24 @@ public class CitilinkPage extends DriverChromeStart {
     public void selectCategory() {
         logStep("Переход в католог");
         catalogMenu.click();
+        waitForPageLoad(driver); // Ожидание загрузки после клика на каталог
+
         logStep("Навести курссор на категорию Смартфоны и планшеты ");
         waitElement("(//span[text()='Смартфоны и планшеты' and @class = 'e19upju70 e106ikdt0 css-1t3lgls e1gjr6xo0'])[2]");
         Actions actions = new Actions(driver);
         actions.moveToElement(smartphonesAndTabletsCategory).perform();
-        waitElement("//span[text()='APPLE iPhone']");
+
         logStep("Нажатие на APPLE iPhone");
         appleIphoneCategory.click();
+        waitElement("//h1[@class='elbnj820 eml1k9j0 app-catalog-kfo60a e1gjr6xo0']");
+
     }
 
     public void sortByPriceAsc() {
         sortByPriceAsc.click();
+        waitForPageLoad(driver); // Ожидание загрузки после сортировки
         updateProductLists();
         verifySortedProducts();
-
     }
 
     public void logFirstFiveProducts() {
@@ -78,10 +84,32 @@ public class CitilinkPage extends DriverChromeStart {
         }
     }
 
-    private void updateProductLists() {
+    protected void updateProductLists() {
+        waitForPageLoad(driver);
+
+        // Добавление небольшой задержки
+        try {
+            Thread.sleep(2000); // Задержка 2 секунды
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // Явное ожидание для списка элементов
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Ожидание появления первого продукта в списке
+        wait.until(driver -> driver.findElements(By.xpath("//a[contains(@class, 'app-catalog-9gnskf e1259i3g0')]")).size() > 0);
         productTitles = driver.findElements(By.xpath("//a[contains(@class, 'app-catalog-9gnskf e1259i3g0')]"));
+
+        // Ожидание появления первой цены в списке
+        wait.until(driver -> driver.findElements(By.xpath("//span[contains(@class, 'e1j9birj0 e106ikdt0 app-catalog-56qww8 e1gjr6xo0')]")).size() > 0);
         productPrices = driver.findElements(By.xpath("//span[contains(@class, 'e1j9birj0 e106ikdt0 app-catalog-56qww8 e1gjr6xo0')]"));
+
+        // Логгирование количества продуктов и цен для отладки
+        logStep("Количество продуктов после обновления: " + productTitles.size());
+        logStep("Количество цен после обновления: " + productPrices.size());
     }
+
 
     private void verifySortedProducts() {
         logStep("Проверка сортировки товаров по возрастанию цены");
@@ -92,9 +120,12 @@ public class CitilinkPage extends DriverChromeStart {
             int price1 = Integer.parseInt(priceText1);
             int price2 = Integer.parseInt(priceText2);
             Assertions.assertTrue(price2 >= price1, "Ошибка: Цена товара " + (i + 2) + " меньше цены товара " + (i + 1));
-
         }
         logStep("Сортировка товаров успешно проверена");
+    }
+    public void scrollPageDown() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,500)");
     }
 
 }

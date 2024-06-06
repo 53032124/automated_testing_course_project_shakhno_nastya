@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -36,12 +37,19 @@ abstract public class DriverChromeStart {
         setUp();
     }
 
-    public void logStep(String message) {
+    public static void logStep(String message) {
         logger.info(message);
         Allure.step(message);
     }
 
     public void waitElement(String path) {
         wait.until(visibilityOfElementLocated(By.xpath(path)));
+    }
+    public static void waitForPageLoad(WebDriver driver) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+
+        wait.until(webDriver ->
+                ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete")
+        );
     }
 }
