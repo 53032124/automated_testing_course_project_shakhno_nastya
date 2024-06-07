@@ -19,9 +19,9 @@ public class ListenerForTests implements TestWatcher {
             );
 
             Allure.addAttachment("Логи в результате падения теста: ", String.valueOf(DriverChromeStart.driver.manage().logs().get(LogType.BROWSER).getAll()));
-            DriverChromeStart.driver.quit();
+            //DriverChromeStart.driver.quit();
         }
-        WebDriverManager.chromedriver().quit();
+        //WebDriverManager.chromedriver().quit();
     }
 
     @Override
@@ -34,7 +34,7 @@ public class ListenerForTests implements TestWatcher {
             Allure.addAttachment("Логи в результате успешного прохождения теста: ", String.valueOf(DriverChromeStart.driver.manage().logs().get(LogType.BROWSER).getAll()));
             //DriverChromeStart.driver.quit();
         }
-        WebDriverManager.chromedriver().quit();
+        //WebDriverManager.chromedriver().quit();
     }
     // добавить сохранение падения теста скрином
 
