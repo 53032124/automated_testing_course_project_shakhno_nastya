@@ -13,10 +13,8 @@ import java.time.Duration;
 
 public class CitilinkPageForTestCase2 extends CitilinkPage {
 
-    @FindBy(xpath = "//h1[@class='elbnj820 eml1k9j0 app-catalog-kfo60a e1gjr6xo0']")
-    private WebElement processorsh1;
 
-    @FindBy(xpath = "(//span[contains(text(),'товаров')])[2]")
+    @FindBy(xpath = "//span[contains(@data-meta-name,'SubcategoryPageTitle__product-count')]")
     private WebElement countproduct;
 
     @FindBy(xpath = "//button[@class='e1nu7pom0 css-ony2li e4mggex0']")
@@ -52,7 +50,7 @@ public class CitilinkPageForTestCase2 extends CitilinkPage {
     }
 
     public int getCountProduct() {
-        String countText = countproduct.getText().replaceAll("\\D+", ""); // Removing all non-numeric characters
+        String countText = countproduct.getText().replaceAll("\\D+", "");
         return Integer.parseInt(countText);
     }
 
@@ -69,6 +67,11 @@ public class CitilinkPageForTestCase2 extends CitilinkPage {
 
         waitForPageLoad(driver);
 
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         countproductBeforeFilter = getCountProduct();
     }
@@ -81,11 +84,21 @@ public class CitilinkPageForTestCase2 extends CitilinkPage {
 
         pickupIn5MinutesFilter.click();
 
+        CitilinkPage.scrollPageUp();
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        waitForPageLoad(driver);
+
         boolean filterApplied = false;
         for (int i = 0; i < 5; i++) {
             countproductAfterFilter = getCountProduct();
 
-            if (countproductBeforeFilter == countproductAfterFilter) {
+            if (countproductBeforeFilter != countproductAfterFilter) {
                 filterApplied = true;
                 logStep("Фильтр применился");
                 break;

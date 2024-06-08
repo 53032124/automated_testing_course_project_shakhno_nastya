@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Отладки теста 2">
+    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Добавление 3 теста для 4 задания">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/task4/CitilinkPageForTestCase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,8 @@
     "JUnit.CitilinkTestCase1.testProductSortingByPrice.executor": "Run",
     "JUnit.CitilinkTestCase2.executor": "Run",
     "JUnit.CitilinkTestCase2.testAddProductToCartWithFilter.executor": "Run",
-    "JUnit.CitilinkTestCase3.testAddDiscountedProductToFavorites.executor": "Debug",
+    "JUnit.CitilinkTestCase3.executor": "Run",
+    "JUnit.CitilinkTestCase3.testAddDiscountedProductToFavorites.executor": "Run",
     "JUnit.CitilinkTests.executor": "Run",
     "JUnit.CitilinkTests.testProductSortingByPrice.executor": "Run",
     "JUnit.ScheduleTests.executor": "Run",
@@ -67,7 +67,7 @@
       <recent name="tests.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CitilinkTestCase3.testAddDiscountedProductToFavorites">
+  <component name="RunManager" selected="JUnit.YandexMarketTests.searchProductTest">
     <configuration name="CitilinkTestCase1.testProductSortingByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
@@ -84,21 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CitilinkTestCase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automated_testing_course_project_shakhno_nastya" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.task4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.task4" />
-      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase2" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CitilinkTestCase2.testAddProductToCartWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
@@ -111,6 +96,21 @@
       <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase2" />
       <option name="METHOD_NAME" value="testAddProductToCartWithFilter" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitilinkTestCase3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase3" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CitilinkTestCase3.testAddDiscountedProductToFavorites" />
         <item itemvalue="JUnit.YandexMarketTests.searchProductTest" />
-        <item itemvalue="JUnit.CitilinkTestCase1.testProductSortingByPrice" />
         <item itemvalue="JUnit.CitilinkTestCase2.testAddProductToCartWithFilter" />
-        <item itemvalue="JUnit.CitilinkTestCase2" />
+        <item itemvalue="JUnit.CitilinkTestCase3" />
+        <item itemvalue="JUnit.CitilinkTestCase1.testProductSortingByPrice" />
+        <item itemvalue="JUnit.CitilinkTestCase3.testAddDiscountedProductToFavorites" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +175,8 @@
       <workItem from="1717490024286" duration="15322000" />
       <workItem from="1717584818762" duration="6340000" />
       <workItem from="1717612363620" duration="6412000" />
-      <workItem from="1717686677321" duration="10782000" />
+      <workItem from="1717686677321" duration="11395000" />
+      <workItem from="1717871697622" duration="5853000" />
     </task>
     <task id="LOCAL-00001" summary="add inform for schedule page">
       <option name="closed" value="true" />
@@ -233,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717693179081</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавление 3 теста для 4 задания">
+      <option name="closed" value="true" />
+      <created>1717802495415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717802495415</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,20 +267,12 @@
     <MESSAGE value="Путаница с ветка" />
     <MESSAGE value="Заработало 2.0" />
     <MESSAGE value="Отладки теста 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отладки теста 2" />
+    <MESSAGE value="Добавление 3 теста для 4 задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление 3 теста для 4 задания" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/task4/CitilinkTestCase2.java</url>
-          <line>22</line>
-          <properties class="tests.task4.CitilinkTestCase2" method="testAddProductToCartWithFilter">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/tests/YandexMarketTests.java</url>
           <line>23</line>
