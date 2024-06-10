@@ -48,6 +48,7 @@ public class YandexMarketTests extends DriverChromeStart {
     public void navigateToTablets() {
         logStep("Шаг 2: Перейти в категорию 'Планшеты'");
         marketPage.goToTablets();
+        marketPage.waitForCaptchaToDisappear();
         String pageTitle = driver.getTitle();
         Assertions.assertTrue(pageTitle.contains("Планшеты"));
         logStep("Страница Планшеты успешно открыта \n");

@@ -37,7 +37,7 @@ public class ListenerForTests implements TestWatcher {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        //WebDriverManager.chromedriver().quit();
+        WebDriverManager.chromedriver().quit();
     }
 
     @Override
@@ -48,9 +48,9 @@ public class ListenerForTests implements TestWatcher {
                     ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)
             );
             Allure.addAttachment("Логи в результате успешного прохождения теста: ", String.valueOf(driver.manage().logs().get(LogType.BROWSER).getAll()));
-            //DriverChromeStart.driver.quit();
+            DriverChromeStart.driver.quit();
         }
-        //WebDriverManager.chromedriver().quit();
+        WebDriverManager.chromedriver().quit();
     }
 
 }

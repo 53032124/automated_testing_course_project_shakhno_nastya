@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
 import java.util.List;
 
 public class YandexMarketPage extends DriverChromeStart {
@@ -50,35 +51,47 @@ public class YandexMarketPage extends DriverChromeStart {
         PageFactory.initElements(DriverChromeStart.driver, this);
     }
 
+    public void waitForCaptchaToDisappear() {
+        while (driver.getTitle().equals("Ой, Капча!")) {
+            logStep("Столкнулись с капчей. Жду, пока она исчезнет...");
+            try {
+                Thread.sleep(3000); // Wait for 3 seconds before checking again
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new RuntimeException(e);
+            }
+        }
+        logStep("Капча исчезла");
+    }
 
     public void goToTablets() {
-        // Ожидание появления и кликабельности кнопки каталога
+        waitForCaptchaToDisappear();
         logStep("Переход в каталог товаров Яндекс Маркета");
         waitElement("//span[contains(text(),'Каталог')]");
         catalogButton.click();
 
-        // Ожидание появления элемента электроники и перемещение к нему
         logStep("Наведение курсора на раздел Электроника");
         waitElement("//span[contains(text(),'Электроника') and @class ='_3W4t0']");
         Actions actions = new Actions(driver);
         actions.moveToElement(electronicsElement).perform();
-        // Ожидание кликабельности элемента планшетов и переход к нему
 
         logStep("Переход в раздеел Планшеты");
         waitElement("//a[contains(text(),'Планшеты') and @class='_2re3U ltlqD _2TBT0']");
         tablets.click();
     }
 
-
     public void filterBySamsung() {
+        waitForCaptchaToDisappear();
         samsungFilter.click();
     }
 
     public void sortByPriceAscending() {
+        waitForCaptchaToDisappear();
         sortByPriceAsc.click();
     }
 
     public void logFirstFiveProducts() {
+        waitForCaptchaToDisappear();
         updateProductLists();
 
         logStep("Всего продуктов: " + productTitles.size());
@@ -96,16 +109,17 @@ public class YandexMarketPage extends DriverChromeStart {
         }
     }
 
-
     public void rememberSecondProduct() {
+        waitForCaptchaToDisappear();
         updateProductLists();
 
         rememberedProductName = productTitles.get(1).getText();
         rememberedProductPrice = productPrices.get(1).getText();
-        logStep("Название продукта: " + rememberedProductName + ", цена которого равна: " + rememberedProductPrice );
+        logStep("Название продукта: " + rememberedProductName + ", цена которого равна: " + rememberedProductPrice);
     }
 
     public void searchForRememberedProduct() {
+        waitForCaptchaToDisappear();
         searchInput.sendKeys(rememberedProductName);
         searchButton.click();
 
@@ -117,15 +131,14 @@ public class YandexMarketPage extends DriverChromeStart {
 
         Assertions.assertEquals(rememberedProductName, searchResultTitle.getText());
         Assertions.assertEquals(rememberedProductPrice, searchResultPrice.getText());
-        logStep("Найден продукт: " + rememberedProductName + ", цена которого равна: " + rememberedProductPrice );
-
+        logStep("Найден продукт: " + rememberedProductName + ", цена которого равна: " + rememberedProductPrice);
     }
-    // Метод для проверки отображения логотипа
+
     public boolean isLogoDisplayed() {
         return logoMarket.isDisplayed();
     }
+
     private void updateProductLists() {
-        // Update product lists to reflect the current state of the page
         productTitles = driver.findElements(By.xpath("//h3[@role='link']"));
         productPrices = driver.findElements(By.xpath("//span[@class='_1ArMm']"));
     }

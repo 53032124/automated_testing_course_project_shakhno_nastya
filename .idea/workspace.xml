@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Отладка 3 тест-кейса для задания 4">
+    <list default="true" id="9d5a3451-f2b2-4217-9235-f7aeb0637631" name="Changes" comment="Добавление доп файлов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/YandexMarketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/YandexMarketPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/YandexMarketTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/YandexMarketTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ListenerForTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +54,10 @@
     "JUnit.ScheduleTests.executor": "Run",
     "JUnit.ScheduleTests.scheduleTest.executor": "Run",
     "JUnit.TodoTests.executor": "Run",
+    "JUnit.TodoTests.toDoTest.executor": "Run",
     "JUnit.YandexMarketTests.executor": "Run",
     "JUnit.YandexMarketTests.searchProductTest.executor": "Run",
+    "Maven.CourseProgectTesting [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.automated_testing_course_project_shakhno_nastya [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,91 +77,91 @@
       <recent name="tests.task4" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BackEndReqresTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.YandexMarketTests.searchProductTest">
+    <configuration name="CitilinkTestCase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.task5.*" />
+          <option name="PATTERN" value="tests.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.task5" />
-      <option name="MAIN_CLASS_NAME" value="tests.task5.BackEndReqresTest" />
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase1" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BackEndReqresTest.testGetUsersFromPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CitilinkTestCase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.task5.*" />
+          <option name="PATTERN" value="tests.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.task5" />
-      <option name="MAIN_CLASS_NAME" value="tests.task5.BackEndReqresTest" />
-      <option name="METHOD_NAME" value="testGetUsersFromPage" />
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitilinkTestCase3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.task4" />
+      <option name="MAIN_CLASS_NAME" value="tests.task4.CitilinkTestCase3" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScheduleTests.scheduleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_course_project_shakhno_nastya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ScheduleTests" />
+      <option name="METHOD_NAME" value="scheduleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReqresAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="YandexMarketTests.searchProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automated_testing_course_project_shakhno_nastya" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.task5.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.task5" />
-      <option name="MAIN_CLASS_NAME" value="tests.task5.ReqresAPITest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReqresBackEndTest.userFromPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automated_testing_course_project_shakhno_nastya" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.task5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.task5" />
-      <option name="MAIN_CLASS_NAME" value="tests.task5.ReqresBackEndTest" />
-      <option name="METHOD_NAME" value="userFromPage" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.YandexMarketTests" />
+      <option name="METHOD_NAME" value="searchProductTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReqresTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automated_testing_course_project_shakhno_nastya" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.task5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.task5" />
-      <option name="MAIN_CLASS_NAME" value="tests.task5.ReqresTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BackEndReqresTest.testGetUsersFromPage" />
-        <item itemvalue="JUnit.ReqresAPITest" />
-        <item itemvalue="JUnit.BackEndReqresTest" />
-        <item itemvalue="JUnit.ReqresTest" />
-        <item itemvalue="JUnit.ReqresBackEndTest.userFromPage" />
+        <item itemvalue="JUnit.YandexMarketTests.searchProductTest" />
+        <item itemvalue="JUnit.CitilinkTestCase3" />
+        <item itemvalue="JUnit.CitilinkTestCase1" />
+        <item itemvalue="JUnit.CitilinkTestCase2" />
+        <item itemvalue="JUnit.ScheduleTests.scheduleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +186,7 @@
       <workItem from="1717686677321" duration="11395000" />
       <workItem from="1717871697622" duration="14874000" />
       <workItem from="1717959871955" duration="4953000" />
-      <workItem from="1717979504455" duration="804000" />
+      <workItem from="1717979504455" duration="5469000" />
     </task>
     <task id="LOCAL-00001" summary="add inform for schedule page">
       <option name="closed" value="true" />
@@ -256,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717879355269</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Фикс багов">
+      <option name="closed" value="true" />
+      <created>1717980400659</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717980400659</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавление доп файлов">
+      <option name="closed" value="true" />
+      <created>1717980527140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717980527140</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +303,8 @@
     <MESSAGE value="Отладки теста 2" />
     <MESSAGE value="Добавление 3 теста для 4 задания" />
     <MESSAGE value="Отладка 3 тест-кейса для задания 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отладка 3 тест-кейса для задания 4" />
+    <MESSAGE value="Фикс багов" />
+    <MESSAGE value="Добавление доп файлов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление доп файлов" />
   </component>
 </project>
